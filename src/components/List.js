@@ -1,13 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
 
 const List = ({ delHanlder, editHanlder, owner, id, title, description }) => {
-  const dispatch = useDispatch();
-  const [payload, setPayload] = useState({});
-  useEffect(() => {
-    setPayload({ owner, id, title, description });
-  }, []);
   return (
     <>
       <div

@@ -23,7 +23,7 @@ const Login = () => {
            console.log(data)
            if(data.data.success) {
             localStorage.setItem('token',data.data.token);
-            router.push('/profile');
+            router.push('/todo');
            }else {
             toast.error("Invalid Credential");
            }
@@ -35,7 +35,7 @@ const Login = () => {
     }
     return (
 
-        <div className='form-container flex flex-col justify-center items-center'>
+        <div className='login-container flex flex-col justify-center items-center'>
             <Toaster/>
             <div className=' text-center'>
 

@@ -32,7 +32,7 @@ const Signup = () => {
     }
     return (
 
-        <div className='form-container flex justify-center items-center flex-col'>
+        <div className='login-container flex justify-center items-center flex-col'>
             <div className=' text-center'>
             <SyncLoader
                 color={color}
